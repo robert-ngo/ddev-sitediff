@@ -6,8 +6,8 @@ services:
     image: evolvingweb/sitediff
 #    build:
 #      dockerfile: ./Dockerfile
-#    ports:
-#      - 13080:13080
+    ports:
+      - 13080:13080
     command: tail -f /dev/null
     networks: [default, ddev_default]
     restart: "no"
