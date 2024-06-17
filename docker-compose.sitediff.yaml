@@ -3,9 +3,9 @@
 services:
   sitediff:
     container_name: ddev-${DDEV_SITENAME}-sitediff
-#    image: evolvingweb/sitediff
-    build:
-      dockerfile: ./Dockerfile
+    image: evolvingweb/sitediff
+#    build:
+#      dockerfile: ./Dockerfile
 #    ports:
 #      - 13080:13080
     command: tail -f /dev/null
