@@ -4,8 +4,7 @@ services:
   sitediff:
     container_name: ddev-${DDEV_SITENAME}-sitediff
     image: evolvingweb/sitediff
-#    build:
-#      dockerfile: ./Dockerfile
+    working_dir: ${WORKING_DIR}
     ports:
       - 13080:13080
     command: tail -f /dev/null
@@ -23,6 +22,7 @@ services:
       # HTTP_EXPOSE exposes http traffic from the container port 13080
       # to the host port 13080 vid ddev-router reverse proxy.
       - HTTP_EXPOSE=13080:13080
+      - WORKING_DIR=../sitediff
 
     volumes:
     - ".:/mnt/ddev_config"
