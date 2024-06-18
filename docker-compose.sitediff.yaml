@@ -5,8 +5,6 @@ services:
     container_name: ddev-${DDEV_SITENAME}-sitediff
     image: evolvingweb/sitediff
     working_dir: ${WORKING_DIR}
-    ports:
-      - 13080:13080
     command: tail -f /dev/null
     networks: [default, ddev_default]
     restart: "no"
