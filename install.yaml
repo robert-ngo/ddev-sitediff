@@ -82,7 +82,7 @@ post_install_actions:
 
 # Shell actions that can be done during removal of the add-on
 removal_actions:
- - rm ~/.ddev/commands/sitediff/sitediff
+ - rm ~/.ddev/commands/sitediff/
 
 # Advanced usage - yaml files can be read in and then used as go template actions
 # in pre_install_actions and post_install_actions
