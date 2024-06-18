@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#ddev-generated
-## Description: Post install script to build Sitediff gem.
+## #ddev-generated
+## ## Description: Build sitediff gem.
+## Usage: ddev build-sitediff
 
 cd /sitediff
 
