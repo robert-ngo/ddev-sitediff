@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#ddev-generated
+## Description: Post install script to build Sitediff gem.
+
 cd /sitediff
 
 gem install thor rspec --no-document
