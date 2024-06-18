@@ -5,4 +5,4 @@
 ## Usage: sitediff [flags] [args]
 ## Example: ddev sitediff init https://example.com
 
-./bin/sitediff $@
+/sitediff/bin/sitediff $@
