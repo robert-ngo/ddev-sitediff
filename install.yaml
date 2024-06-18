@@ -79,7 +79,7 @@ dependencies:
 # DDEV environment variables can be interpolated into these actions
 post_install_actions:
   - pwd
-  - ./scripts/build
+  - ./sitediff/build
 # - chmod +x ~/.ddev/commands/web/somecommand
 # - touch somefile.${GOOS}.${DDEV_WEBSERVER}
 # - perl -pi -e 's/oldstring/newstring/g' docker-compose.addon-template.yaml
