@@ -2,7 +2,7 @@
 
 ## #ddev-generated
 ## ## Description: Build sitediff gem.
-## Usage: ddev build-sitediff
+## Usage: sitediff-build
 
 cd /sitediff
 

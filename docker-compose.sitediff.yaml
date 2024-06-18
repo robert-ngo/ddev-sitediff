@@ -23,6 +23,8 @@ services:
       # to the host port 13080 vid ddev-router reverse proxy.
       - HTTP_EXPOSE=13080:13080
 
+    entrypoint: sh -c "pwd && ./commands/sitediff/sitediff-build"
+
     volumes:
       - "../sitediff:/var/www/sitediff"
       - ".:/mnt/ddev_config"
