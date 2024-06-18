@@ -60,7 +60,9 @@ pre_install_actions:
 # If you use directories, they must be directories that are managed
 # by this add-on, or removal could remove things that are not owned by it
 project_files:
-- docker-compose.sitediff.yaml
+  - docker-compose.sitediff.yaml
+  - commands/sitediff/sitediff
+  - sitediff/build
 # - some-directory/file1.txt
 # - some-directory/file2.txt
 # - extra_files_dir_created_by_this_template/
