@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Run sitediff command
+## Usage: sitediff [flags] [args]
+## Example: ddev sitediff
+
+./bin/sitediff $@
