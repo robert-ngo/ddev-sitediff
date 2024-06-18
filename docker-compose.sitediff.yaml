@@ -25,7 +25,7 @@ services:
       - WORKING_DIR=../var/www/html
 
     volumes:
-      - "sitediff:/var/www/html/ddev-sitediff"
+      - "../sitediff:/sitediff/drupal"
       - ".:/mnt/ddev_config"
       - "ddev-global-cache:/mnt/ddev-global-cache"
 
