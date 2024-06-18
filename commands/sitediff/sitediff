@@ -2,7 +2,7 @@
 
 ## #ddev-generated
 ## Description: Run sitediff command
-## Usage: ddev sitediff [flags] [args]
+## Usage: sitediff [flags] [args]
 ## Example: ddev sitediff init https://example.com
 
 ./bin/sitediff $@
