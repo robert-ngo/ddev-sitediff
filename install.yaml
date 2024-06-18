@@ -63,7 +63,6 @@ project_files:
   - docker-compose.sitediff.yaml
   - commands/sitediff/sitediff
   - commands/sitediff/build-sitediff
-  - sitediff/build-sitediff
 
 # List of files and directories that are copied into the global .ddev directory
 # DDEV environment variables can be interpolated into these filenames
