@@ -5,6 +5,8 @@ services:
     container_name: ddev-${DDEV_SITENAME}-sitediff
     image: evolvingweb/sitediff
     working_dir: ${WORKING_DIR}
+    expose:
+      - 13080
     command: tail -f /dev/null
     networks: [default, ddev_default]
     restart: "no"
@@ -23,7 +25,7 @@ services:
       - WORKING_DIR=../var/www/html
 
     volumes:
-      - "web:/var/www/html"
+      - "sitediff:/var/www/html/ddev-sitediff"
       - ".:/mnt/ddev_config"
       - "ddev-global-cache:/mnt/ddev-global-cache"
 
