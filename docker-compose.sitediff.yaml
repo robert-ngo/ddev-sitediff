@@ -5,11 +5,15 @@ services:
     container_name: ddev-${DDEV_SITENAME}-sitediff
     image: evolvingweb/sitediff
     working_dir: /var/www/sitediff
-    ports:
-      - "13080:13080"
-    command: tail -f /dev/null
-    networks: [default, ddev_default]
     restart: "no"
+
+    # Sitediff is served from this port inside the container.
+    expose:
+      - 13080
+    command: tail -f /dev/null
+    networks:
+      - default
+      - ddev_default
     # These labels ensure this service is discoverable by ddev.
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
@@ -27,9 +31,6 @@ services:
       - "../sitediff:/var/www/sitediff"
       - ".:/mnt/ddev_config"
       - "ddev-global-cache:/mnt/ddev-global-cache"
-
-    depends_on:
-      - web
 
 volumes:
   sitediff:
